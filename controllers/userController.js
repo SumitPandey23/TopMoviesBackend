@@ -110,7 +110,7 @@ exports.login = async (req, res) => {
       userType: user.userType,
     });
   } catch (error) {
-    console.error(error);
-    res.status(500).json({ error, "Something went wrong." });
+    console.log(error);
+    res.status(500).json({ error: "Something went wrong." });
   }
 };
